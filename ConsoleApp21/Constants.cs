@@ -8,6 +8,6 @@ namespace ConsoleApp21
 {
     public class Constants
     {
-        public readonly static string ConnectionString = "Server = localhost; Port = 5432; Database = nimadir; User Id = postgres; Password = 19760331";
+        public readonly static string ConnectionString = "Server = localhost; Port = 5432; Database = jumong; User Id = postgres; Password = 1234";
     }
 }

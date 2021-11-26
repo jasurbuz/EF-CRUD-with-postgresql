@@ -28,7 +28,6 @@ namespace ConsoleApp21.Models
         [Column("age")]
         public int Age { get; set; }
 
-        [Required]
         [Column("phone")]
         public string Phone { get; set; }
     }

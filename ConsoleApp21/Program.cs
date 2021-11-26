@@ -9,13 +9,15 @@ namespace ConsoleApp21
     {
         static void Main(string[] args)
         {
-            StudentService service = new StudentService();
-            Student student = new Student() { FirstName = "Azimjon", LastName = "Erkinov", Age = 19, Phone = "+998934630527" };
-            service.Delete(2);
-            foreach (var item in service.GetAll())
+            IStudentService service = new StudentService();
+            //Student student = new Student() {FirstName = "Asadbek", LastName = "Ashirov", Age = 20, Phone = "+998906771565" };
+            //service.Delete(2);
+            foreach (var item in service.GetAll(p => !(p.Age > 20)))
             {
-                Console.WriteLine(item.FirstName);
+                Console.WriteLine(item.Id + "\t" + item.FirstName + " \t" + item.Age);
             }
+            //var student = service.Get(3);
+            //Console.WriteLine(student.FirstName);
         }
     }
 }
